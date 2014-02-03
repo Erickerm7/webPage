@@ -18,7 +18,7 @@ if($_POST) {
     $emailTo = 'erickerm7@hotmail.com';
 
     $clientName = trim($_POST['name']);
-	$clientPhone = trim($_POST['phone']);
+    $clientPhone = trim($_POST['phone']);
     $clientEmail = trim($_POST['email']);
     $subject = trim($_POST['subject']);
     $message = trim($_POST['message']);

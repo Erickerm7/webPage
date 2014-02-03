@@ -104,14 +104,14 @@ jQuery(document).ready(function() {
     $('.contact-form form').submit(function() {
 
         $('.contact-form form .nameLabel').html('Name');
-		$('.contact-form form .phoneLabel').html('Phone');
+	$('.contact-form form .phoneLabel').html('Phone');
         $('.contact-form form .emailLabel').html('Email');
         $('.contact-form form .messageLabel').html('Message');
 
         var postdata = $('.contact-form form').serialize();
         $.ajax({
             type: 'POST',
-            url: 'assets/sendmail.php',
+            url: 'subscribe.php',
             data: postdata,
             dataType: 'json',
             success: function(json) {

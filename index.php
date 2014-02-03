@@ -42,6 +42,7 @@
     <script src="assets/js/jquery.quicksand.js"></script>
     <script src="assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scriptcito.js"></script>
 <script>
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -70,7 +71,14 @@
     </head>
 
     <body>
-
+        <div class="suscribir">
+            <form action="subscribe.php" method="post">
+                <p>Correo electrónico: <br/>
+                    <input type="email" name="correo" required/> <br />
+                <input type="submit" value = "Suscribir"/>
+                </p>
+            </form>
+        </div>
         <!-- Header -->
         <div class="container">
             <div class="header row">
