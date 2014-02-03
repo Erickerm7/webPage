@@ -53,20 +53,7 @@
 }(document, 'script', 'facebook-jssdk'));
 </script>  
 
-<script src="assets/js/jquery.scrollUp.min.js"></script>
 
-		<script>
-
-			$(document).ready(function(){
-		 		
-		 		/*$.scrollUp();*/	 		
-		 		$.scrollUp({
-				  	animation: "slide",
-				    scrollText: 'Subir'			   
-				 });
-		 	});
-
-		</script>
                 
     </head>
 
@@ -352,7 +339,24 @@
         <script type='text/javascript' src='assets/contact/js/jquerycontact.js'></script>
 		<script type='text/javascript' src='assets/contact/js/contactservices.simple.js'></script>
 		<script type='text/javascript' src='assets/contact/js/js/contactservices.js'></script>
-		-->
+	
+    	-->
+        
+    <script src="assets/js/jquery.scrollUp.min.js"></script>
+
+		<script>
+
+			$(document).ready(function(){
+		 		
+		 		/*$.scrollUp();*/	 		
+		 		$.scrollUp({
+				  	animation: "slide",
+				    scrollText: 'Subir'			   
+				 });
+		 	});
+
+		</script>    
+    
     </body>
 
 </html>
