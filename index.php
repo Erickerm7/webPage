@@ -66,19 +66,7 @@
 		 	});
 
 		</script>
-        
-      <script type="text/javascript">
-
-		$(document).ready(function()
-	  {	  
-	
-		  $('').fadeIn(5000);
-		  });
-		  </script>
-          
-             
-		
-               
+                
     </head>
 
     <body>
@@ -303,8 +291,8 @@
             <div class="container">
                 <div class="row">
                     <div class="widget span3">
-                        <h4>Sobre Nosotros</h4>
-                        <p>Somos una empresa que esta a tu servicio con más de 26 años de experiencia dentro del mercado nacional con paso firme, y un crecimiento sostenido el cual fortalece nuestra estructura finaciera.</p>
+                        <h4>Suscribete</h4>
+                        <p>Para recibir informaci&oacute;n de nuestros productos y promociones</p>
                         <p><a href="">Leer m&aacute;s...</a></p>
                     </div>
                     <div class="widget span3">
@@ -338,7 +326,7 @@
                 <div class="footer-border"></div>
                 <div class="row">
                     <div class="copyright span4">
-                        <p><a href="http://www.aceiba.com.gt">Aseguradora La Ceiba, S.A. </a> - 20 Calle 15-20 Zona 13 - Derechos Reservados. 2013.</p>
+                        <p><a href="http://www.aceiba.com.gt">Aseguradora La Ceiba, S.A. </a> - 20 Calle 15-20 Zona 13 - &copy; <?php echo date("Y"); ?>.</p>
                     </div>
                     
                     <div class="social span8">
