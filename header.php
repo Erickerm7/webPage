@@ -39,7 +39,7 @@
 
 <script src="assets/js/jquery.scrollUp.min.js"></script>
 
-		<script>
+		<script>'
 
 
 ?>
