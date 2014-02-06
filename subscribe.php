@@ -4,9 +4,9 @@
         
         $correo = trim($_POST['correo']);
         
-        mysql_connect('localhost', 'root', '') or die ('No se pudo realizar la conexión.');
+        mysql_connect('localhost', 'webpage', 'as550420') or die ('No se pudo realizar la conexión.');
             
-        mysql_select_db('bd') or die ('No se pudo seleccionar la base de datos');
+        mysql_select_db('page2014web') or die ('No se pudo seleccionar la base de datos');
             
         $query = "INSERT INTO suscriptores (Correo) VALUES('$correo')";
             

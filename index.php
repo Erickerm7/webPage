@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-    <head>
+<html lang="es">
 
         <meta charset="utf-8">
         <title>Aseguradora La Ceiba - A tu servicio</title>
@@ -41,31 +39,30 @@
     <script src="assets/js/jquery.ui.map.min.js"></script>
     <script src="assets/js/jquery.quicksand.js"></script>
     <script src="assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.scrollUp.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/scriptcito.js"></script>
-<script>
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>  
-
-
-                
+	<script>
+		(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+  			js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+  			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>  
+	<script>
+			$(document).ready(function(){
+		 		/*$.scrollUp();*/	 		
+		 		$.scrollUp({
+				  	animation: "slide",
+				    scrollText: 'Subir'			   
+				 });
+		 	});
+	</script> 
+       
     </head>
-
-    <body>
-        <div class="suscribir">
-            <form action="subscribe.php" method="post">
-                <p>Correo electrónico: <br/>
-                    <input type="email" name="correo" required/> <br />
-                <input type="submit" value = "Suscribir"/>
-                </p>
-            </form>
-        </div>
+	<body>
         <!-- Header -->
         <div class="container">
             <div class="header row">
@@ -78,27 +75,27 @@
                                 <span class="icon-bar"></span>
                             </a>
                             <h1>
-                                <a class="brand" href="index.html">Ceiba - A su servicio!</a>
+                                <a class="brand" href="#">Ceiba - A su servicio!</a>
                             </h1>
                             <div class="nav-collapse collapse">
                                 <ul class="nav pull-right">
-                                    <li class="current-page">
-                                        <a href="index.html"><i class="icon-home"></i><br />Inicio</a>
+                                	<li class="current-page">
+                                    	<a href="#"><i class="icon-home"></i><br />Inicio</a>
                                     </li>
                                     <li>
-                                        <a href="seguros.html"><i class="icon-bookmark"></i><br />Productos</a>
+                                        <a href="seguros.php"><i class="icon-bookmark"></i><br />Productos</a>
                                     </li>
                                     <!--<li>
                                         <a href="#"><i class="icon-comments"></i><br />Blog</a>
                                     </li>-->
                                     <li>
-                                        <a href="services.html"><i class="icon-tasks"></i><br />Servicios</a>
+                                        <a href="services.php"><i class="icon-tasks"></i><br />Servicios</a>
                                     </li>
                                     <li>
-                                        <a href="about.html"><i class="icon-user"></i><br />Nosotros</a>
+                                        <a href="about.php"><i class="icon-user"></i><br />Nosotros</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html"><i class="icon-envelope-alt"></i><br />
+                                        <a href="contact.php"><i class="icon-envelope-alt"></i><br />
                                         Contactar</a>
                                     </li>
                                 </ul>
@@ -191,7 +188,7 @@
             </div>-->
             
             <div class="row">
-            	<a href="seguros.html">
+            	<a href="seguros.php">
                 <div class="work span3">
                     <img src="assets/img/portfolio/work1.png" alt=""> 
                     <h4>Nuestros Productos</h4>
@@ -229,7 +226,7 @@
                     </a>
                 </div>
                 
-                <div class="work span3"> <a href="complaint.html">
+                <div class="work span3"> <a href="complaint.php">
                     <img src="assets/img/portfolio/work4.png" alt="">
                     <h4>Buzón de Quejas</h4>
                     <!--<p>Si tienes alguna queja o sugerencia, no dudes en enviarla, queremos darte el mejor servicio...</p>-->
@@ -287,34 +284,50 @@
                 <div class="row">
                     <div class="widget span3">
                         <h4>Suscribete</h4>
-                        <p>Para recibir informaci&oacute;n de nuestros productos y promociones</p>
-                        <p><a href="">Leer m&aacute;s...</a></p>
+                        <p>Para recibir informaci&oacute;n de nuestros productos y promociones.</p>
+                        <div class="suscribir">
+            			<form action="subscribe.php" method="post">
+                		<label for="modelo" class="modeloLabel"><strong>Correo Electr&oacute;nico</strong></label>
+                    		<input type="email" name="correo" required/> 
+                		<button type="submit">Suscribir</button>
+            			</form>
+        				</div>
+                        <!--<p><a href="">Leer m&aacute;s...</a></p>-->
                     </div>
                     <div class="widget span3">
+                    	<h4>Descargas e Interes</h4>
+                        <p><i class="icon-file"></i><a href="formularios.php" >Formularios Vida e Ive</a></p>
+                        <p><i class="icon-money"></i><a href="formasdepago.php" >Formas de Pago</a></p>
+                        <p><i class="icon-briefcase"></i><a href="empleo.php" >Empleo</a></p>
+                        <p><i class="icon-comments"></i><a href="complaint.php" >Quejas</a></p>
+                        <p><i class="icon-th-large"></i><a href="talleres.php" >Red de Talleres</a></p>
+                        <!--
                         <h4>Tweets</h4>
                         <a class="twitter-timeline" href="https://twitter.com/@acieba" data-widget-id="376000348541833216">Tweets por @aceiba</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                        
+                    	-->
                     </div>
-                    <div class="widget span3">
+                  <div class="widget span3">
+                    <h4>Personal Ceiba</h4>
+                       <p><i class="icon-envelope-alt"></i><a href="https://mail.aceiba.com.gt:83/horde" target="_blank" >Correo Electr&oacute;nico</a></p>
+                        <p><i class="icon-picture"></i><a href="http://aceiba.com.gt:8888/apps/imagenes" target="_blank" >Subir imagenes</a></p>
+                        <p><i class="icon-user"></i><a href="http://www.aceiba.com.gt/servicat" target="_blank" >Agentes Servicat</a></p>
+                        <p><i class="icon-question-sign"></i><a href="http://www.aceiba.com.gt/consultas/index.html" target="_blank" >Consultas</a></p>
+                        <!--<p><i class="icon-th-list"></i><a href="#" ></a></p>-->
+                        <!--
                         <h4>En FaceBook	</h4>
                         <!--<ul class="flickr-feed"></ul>-->
-                        
-                        
-                        <a class="fb-like-box" data-href="http://www.facebook.com/aceiba"  data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></a>
-                        
+                        <!--
+                        <a class="fb-like-box" data-href="http://www.facebook.com/aceiba"  data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></a>  
+                  		-->
                   </div>
-
-                        
-                        
-                        
-                        
-                    <div class="widget span3">
+                   <div class="widget span3">
                         <h4>Contactanos</h4>
                         <p><i class="icon-map-marker"></i> Dirección: 20 Calle 15-20 zona 13 Guatemala, C.A. 01013</p>
                         <p><i class="icon-phone"></i> PBX: 2379-1800 / 2311-1200</p>
                         <p><i class="icon-print"></i> Fax: 2334-8167 / 2334-8168</p>
-                        <p><i class="icon-envelope-alt"></i> Correo: <a href="">admin@aceiba.com.gt</a></p>
+                        <p><i class="icon-envelope-alt"></i> Correo: <a href="mailto:admin@aceiba.com.gt?subject=Contacto a Administrador - Desde el Sitio Web&body=Favor ponerse en contacto con mi persona, Gracias!" target="_top">
+admin@aceiba.com.gt</a></p>
                     	<p><i class="icon-home"></i><a href="contact.html" >Todas las agencias</a></p>
                     </div>
                 </div>
@@ -323,7 +336,6 @@
                     <div class="copyright span4">
                         <p><a href="http://www.aceiba.com.gt">Aseguradora La Ceiba, S.A. </a> - 20 Calle 15-20 Zona 13 - &copy; <?php echo date("Y"); ?>.</p>
                     </div>
-                    
                     <div class="social span8">
                         <a class="facebook" href="https://www.facebook.com/aceiba"></a>
                         <a class="googleplus" href="https://plus.google.com/105501455679593689740" rel="publisher"></a>
@@ -334,29 +346,11 @@
                 </div>
             </div>
         </footer>
-
 		<!--
         <script type='text/javascript' src='assets/contact/js/jquerycontact.js'></script>
 		<script type='text/javascript' src='assets/contact/js/contactservices.simple.js'></script>
 		<script type='text/javascript' src='assets/contact/js/js/contactservices.js'></script>
-	
     	-->
-        
-    <script src="assets/js/jquery.scrollUp.min.js"></script>
-
-		<script>
-
-			$(document).ready(function(){
-		 		
-		 		/*$.scrollUp();*/	 		
-		 		$.scrollUp({
-				  	animation: "slide",
-				    scrollText: 'Subir'			   
-				 });
-		 	});
-
-		</script>    
-    
     </body>
 
 </html>
